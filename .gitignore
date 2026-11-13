@@ -36,3 +36,8 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+
+# Local Exam Guide (Keep local only, do not push to GitHub)
+VIVA_AND_PRACTICAL_GUIDE.md
+viva_and_practical_guide.md
+

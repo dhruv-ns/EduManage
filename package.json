@@ -1,0 +1,16 @@
+{
+  "name": "edumanage-root",
+  "version": "1.0.0",
+  "description": "EduManage — Student Administration System (BCA Mini Project)",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": ["student-management", "edumanage", "bca-mini-project"],
+  "author": "EduManage Team",
+  "license": "ISC"
+}
+

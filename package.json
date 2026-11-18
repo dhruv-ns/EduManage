@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "EduManage — Student Administration System (BCA Mini Project)",
   "scripts": {
+    "start": "cd server && npm start",
+    "build": "cd server && npm install",
     "install:all": "cd server && npm install && cd ../client && npm install",
     "seed": "cd server && npm run seed",
     "server": "cd server && npm start",

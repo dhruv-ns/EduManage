@@ -9,11 +9,13 @@ const Result = require('../models/Result');
 const SupportTicket = require('../models/SupportTicket');
 const Settings = require('../models/Settings');
 
-const seedData = async () => {
+const seedData = async (shouldExit = true) => {
   try {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/edumanage';
-    await mongoose.connect(mongoUri);
-    console.log('Connected to MongoDB for seeding...');
+    if (mongoose.connection.readyState !== 1) {
+      const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/edumanage';
+      await mongoose.connect(mongoUri);
+      console.log('Connected to MongoDB for seeding...');
+    }
 
     // 1. Clear existing collections
     await User.deleteMany();
@@ -671,12 +673,22 @@ const seedData = async () => {
     console.log('Created institutional settings.');
 
     console.log('Seeding completed successfully!');
-    process.exit(0);
+    if (shouldExit) {
+      process.exit(0);
+    }
+    return { success: true };
   } catch (error) {
     console.error('Seeding error:', error);
-    process.exit(1);
+    if (shouldExit) {
+      process.exit(1);
+    }
+    throw error;
   }
 };
 
-seedData();
+if (require.main === module) {
+  seedData(true);
+}
+
+module.exports = { seedData };
 

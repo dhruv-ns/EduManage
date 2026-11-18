@@ -322,7 +322,7 @@ const Students = () => {
 
         {/* Bulk Action Bar (Visible when rows selected) */}
         {selectedIds.length > 0 && (
-          <div className="flex items-center justify-between bg-primary-light border border-purple-200 px-4 py-2.5 rounded-lg text-xs animate-fadeIn">
+          <div className="flex items-center justify-between bg-primary-light border border-teal-200 px-4 py-2.5 rounded-lg text-xs animate-fadeIn">
             <span className="font-semibold text-primary">
               {selectedIds.length} student{selectedIds.length > 1 ? 's' : ''} selected across this view
             </span>
@@ -333,7 +333,7 @@ const Students = () => {
                   exportToCsv('Selected_Students', selectedData);
                   toast.success(`Exported ${selectedIds.length} students`);
                 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white text-primary border border-primary/20 rounded-md font-medium hover:bg-purple-50 transition-colors"
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-white text-primary border border-primary/20 rounded-md font-medium hover:bg-teal-50 transition-colors"
               >
                 <Download className="w-3.5 h-3.5" />
                 Export Selected
@@ -405,7 +405,7 @@ const Students = () => {
                     <tr
                       key={student._id}
                       className={`hover:bg-slate-50/70 transition-colors ${
-                        isSelected ? 'bg-purple-50/40' : ''
+                        isSelected ? 'bg-teal-50/40' : ''
                       }`}
                     >
                       <td className="py-3.5 px-4">

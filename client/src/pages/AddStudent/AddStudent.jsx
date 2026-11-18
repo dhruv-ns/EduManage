@@ -140,7 +140,7 @@ const AddStudent = () => {
         <div>
           <div className="flex items-center gap-2">
             <h1 className="text-2xl lg:text-3xl font-extrabold text-heading">Add New Student</h1>
-            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-purple-100 text-purple-700 uppercase tracking-wide">
+            <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-teal-100 text-teal-800 uppercase tracking-wide">
               New Intake
             </span>
           </div>
@@ -290,16 +290,16 @@ const AddStudent = () => {
               </div>
 
               {/* Auto-Assigned Roll Box */}
-              <div className="bg-purple-50/80 border border-purple-200 rounded-xl p-4 mb-4 relative">
+              <div className="bg-teal-50/80 border border-teal-200 rounded-xl p-4 mb-4 relative">
                 <div className="flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-purple-900 uppercase tracking-wide">
+                  <span className="text-[11px] font-bold text-teal-900 uppercase tracking-wide">
                     ASSIGNED STUDENT ROLL
                   </span>
                   <div className="flex items-center gap-1">
                     <button
                       type="button"
                       onClick={() => setFormData((prev) => ({ ...prev, rollNumber: generateRoll() }))}
-                      className="p-1 hover:bg-purple-200/50 rounded text-purple-700"
+                      className="p-1 hover:bg-teal-200/50 rounded text-teal-800"
                       title="Regenerate"
                     >
                       <RefreshCw className="w-3.5 h-3.5" />
@@ -312,7 +312,7 @@ const AddStudent = () => {
                 <p className="text-2xl font-black text-primary font-mono mt-1 tracking-tight">
                   {formData.rollNumber}
                 </p>
-                <p className="text-[10px] text-purple-700 mt-1">
+                <p className="text-[10px] text-teal-800 mt-1">
                   System identifier will lock all transcript matrices.
                 </p>
               </div>
@@ -494,7 +494,7 @@ const AddStudent = () => {
             <button
               type="button"
               onClick={handleSaveDraft}
-              className="px-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-purple-100 rounded-lg transition-colors cursor-pointer"
+              className="px-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-teal-100 rounded-lg transition-colors cursor-pointer"
             >
               Save as Draft
             </button>

@@ -356,7 +356,7 @@ const Courses = () => {
               <div className="flex items-center gap-2 pt-3 border-t border-border">
                 <button
                   onClick={() => setCurriculumCourse(course)}
-                  className="flex-1 py-1.5 text-xs font-semibold text-primary bg-primary-light hover:bg-purple-100 rounded-lg transition-colors cursor-pointer"
+                  className="flex-1 py-1.5 text-xs font-semibold text-primary bg-primary-light hover:bg-teal-100 rounded-lg transition-colors cursor-pointer"
                 >
                   Manage Curriculum ›
                 </button>
@@ -589,9 +589,9 @@ const Courses = () => {
           <p className="text-xs text-secondary">
             Verified academic syllabus matrix for {curriculumCourse?.courseCode} ({curriculumCourse?.duration}).
           </p>
-          <div className="p-3 bg-purple-50 rounded-lg border border-purple-100 text-xs">
+          <div className="p-3 bg-teal-50 rounded-lg border border-teal-100 text-xs">
             <p className="font-bold text-primary mb-1">Curricular Credit Distribution</p>
-            <p className="text-[11px] text-purple-900 leading-relaxed">
+            <p className="text-[11px] text-teal-900 leading-relaxed">
               • Core Theory Courses: 24 Modules (96 Credits)<br />
               • Specialized Electives: 6 Modules (18 Credits)<br />
               • Practical Lab Workstations: 4 Capstones (12 Credits)<br />

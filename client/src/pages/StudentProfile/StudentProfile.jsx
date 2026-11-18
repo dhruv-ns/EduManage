@@ -272,7 +272,7 @@ const StudentProfile = () => {
                     <Award className="w-4 h-4 text-primary" />
                     <h3 className="text-sm font-bold text-heading">Academic Standing</h3>
                   </div>
-                  <span className="text-[10px] font-bold bg-purple-100 text-purple-700 px-2 py-0.5 rounded">
+                  <span className="text-[10px] font-bold bg-teal-100 text-teal-800 px-2 py-0.5 rounded">
                     Tier 1 Standing
                   </span>
                 </div>
@@ -286,12 +286,12 @@ const StudentProfile = () => {
                   <p className="text-[11px] text-secondary">Class Rank: 4 of 160 students</p>
                 </div>
 
-                <div className="p-3 bg-purple-50 rounded-lg border border-purple-100 mb-4 text-xs">
+                <div className="p-3 bg-teal-50 rounded-lg border border-teal-100 mb-4 text-xs">
                   <div className="flex items-center gap-1.5 font-bold text-primary mb-1">
                     <Award className="w-3.5 h-3.5" />
                     Dean's Honor Roll
                   </div>
-                  <p className="text-[11px] text-purple-900 leading-snug">
+                  <p className="text-[11px] text-teal-900 leading-snug">
                     Confirmed for Semesters I, II & III Examinations
                   </p>
                 </div>
@@ -467,28 +467,28 @@ const StudentProfile = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <div className="relative pl-5 border-l-2 border-purple-200 space-y-1">
+                  <div className="relative pl-5 border-l-2 border-teal-200 space-y-1">
                     <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-primary"></div>
                     <p className="text-xs font-bold text-heading">Enrolled in Advanced Web Architecture</p>
                     <p className="text-[11px] text-secondary">Course slot confirmed under Prof. E. Vance (Sec 02)</p>
                     <span className="text-[10px] text-slate-400 block">Today, 09:14 AM</span>
                   </div>
 
-                  <div className="relative pl-5 border-l-2 border-purple-200 space-y-1">
+                  <div className="relative pl-5 border-l-2 border-teal-200 space-y-1">
                     <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-blue-500"></div>
                     <p className="text-xs font-bold text-heading">Tuition Fee Paid: $8,940.00</p>
                     <p className="text-[11px] text-secondary">Direct Invoice #418023 settled in full via Wire Transfer</p>
                     <span className="text-[10px] text-slate-400 block">3 days ago</span>
                   </div>
 
-                  <div className="relative pl-5 border-l-2 border-purple-200 space-y-1">
+                  <div className="relative pl-5 border-l-2 border-teal-200 space-y-1">
                     <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-emerald-500"></div>
                     <p className="text-xs font-bold text-heading">Submitted Lab Report 4</p>
                     <p className="text-[11px] text-secondary">Distributed Systems Practical #4 uploaded to LMS portal</p>
                     <span className="text-[10px] text-slate-400 block">Sep 18, 2024</span>
                   </div>
 
-                  <div className="relative pl-5 border-l-2 border-purple-200 space-y-1">
+                  <div className="relative pl-5 border-l-2 border-teal-200 space-y-1">
                     <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-amber-500"></div>
                     <p className="text-xs font-bold text-heading">Faculty Advisor Review Completed</p>
                     <p className="text-[11px] text-secondary">Deans Committee sign-off on Honors thesis proposal</p>
@@ -499,7 +499,7 @@ const StudentProfile = () => {
 
               <button
                 onClick={() => toast('Complete tamper-evident audit ledger opened.', { icon: '📜' })}
-                className="w-full mt-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-purple-100 rounded-lg transition-colors cursor-pointer"
+                className="w-full mt-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-teal-100 rounded-lg transition-colors cursor-pointer"
               >
                 View Full Audit Log →
               </button>

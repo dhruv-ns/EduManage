@@ -294,7 +294,7 @@ const Results = () => {
           </button>
           <button
             onClick={() => setShowCurveTool(true)}
-            className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-primary bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors cursor-pointer"
+            className="flex items-center gap-2 px-3.5 py-2 text-xs font-semibold text-primary bg-teal-50 border border-teal-200 rounded-lg hover:bg-teal-100 transition-colors cursor-pointer"
           >
             <Sliders className="w-4 h-4" />
             Grade Curve Tool
@@ -532,7 +532,7 @@ const Results = () => {
                       <td className="py-3 px-4">
                         <span className={`px-2 py-0.5 rounded font-bold text-xs ${
                           grade.startsWith('A')
-                            ? 'bg-purple-100 text-purple-700'
+                            ? 'bg-teal-100 text-teal-800'
                             : grade.startsWith('B')
                             ? 'bg-blue-100 text-blue-700'
                             : isFailing
@@ -548,7 +548,7 @@ const Results = () => {
                       <td className="py-3 px-4">
                         <span className={`px-2 py-0.5 rounded text-[10px] font-semibold ${
                           classification.includes('Distinction')
-                            ? 'bg-purple-50 text-primary border border-purple-200'
+                            ? 'bg-teal-50 text-primary border border-teal-200'
                             : isFailing
                             ? 'bg-red-50 text-danger border border-red-200'
                             : 'bg-emerald-50 text-emerald-700'
@@ -574,7 +574,7 @@ const Results = () => {
         )}
 
         {/* Verification & Digital Signature Footer */}
-        <div className="p-4 bg-purple-50/50 border-t border-purple-100 flex flex-col md:flex-row md:items-center justify-between text-xs gap-3">
+        <div className="p-4 bg-teal-50/50 border-t border-teal-100 flex flex-col md:flex-row md:items-center justify-between text-xs gap-3">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center flex-shrink-0">
               <Shield className="w-4 h-4" />

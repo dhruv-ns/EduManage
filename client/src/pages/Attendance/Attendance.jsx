@@ -329,7 +329,7 @@ const Attendance = () => {
               placeholder="Filter by name or roll..."
               className="px-3 py-1.5 text-xs border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary text-body"
             />
-            <span className="text-[11px] bg-purple-50 text-primary border border-purple-200 px-2.5 py-1 rounded-lg font-bold">
+            <span className="text-[11px] bg-teal-50 text-primary border border-teal-200 px-2.5 py-1 rounded-lg font-bold">
               Threshold: ≥ 75.0%
             </span>
           </div>

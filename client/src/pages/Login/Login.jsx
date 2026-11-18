@@ -67,19 +67,19 @@ const Login = () => {
       {/* Main Two-Column Box */}
       <div className="max-w-7xl w-full mx-auto my-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch py-8">
         {/* Left Column: Branding & Features */}
-        <div className="lg:col-span-7 bg-gradient-to-br from-[#1E1B4B] via-[#0F172A] to-[#1E293B] rounded-2xl p-8 lg:p-12 border border-slate-800 flex flex-col justify-between shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="lg:col-span-7 bg-gradient-to-br from-[#0F172A] via-[#1E3A5F] to-[#0F172A] rounded-2xl p-8 lg:p-12 border border-slate-800 flex flex-col justify-between shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
           <div>
             {/* Header Badge */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-purple-500/30">
+              <div className="w-10 h-10 bg-primary rounded-xl flex items-center justify-center shadow-lg shadow-teal-500/30">
                 <GraduationCap className="w-6 h-6 text-white" />
               </div>
               <div>
                 <div className="flex items-center gap-2">
                   <span className="font-bold text-lg tracking-tight text-white">EduManage SMS</span>
-                  <span className="text-[10px] font-semibold bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30 uppercase tracking-wider">
+                  <span className="text-[10px] font-semibold bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded border border-teal-500/30 uppercase tracking-wider">
                     Enterprise
                   </span>
                 </div>
@@ -98,7 +98,7 @@ const Login = () => {
             {/* Feature Highlights */}
             <div className="space-y-4 mb-8">
               <div className="flex items-start gap-3.5 bg-slate-900/60 p-4 rounded-xl border border-slate-800/80">
-                <div className="p-2 bg-purple-950/80 rounded-lg text-purple-400 border border-purple-800/40">
+                <div className="p-2 bg-teal-950/80 rounded-lg text-teal-300 border border-teal-800/40">
                   <Database className="w-5 h-5" />
                 </div>
                 <div>
@@ -141,7 +141,7 @@ const Login = () => {
               "EduManage reduced our end-of-term transcript reconciliation window by 82% across all 9 collegiate faculties. The automated degree audit is flawless."
             </p>
             <div className="flex items-center gap-3">
-              <div className="w-7 h-7 rounded-full bg-purple-600 flex items-center justify-center text-xs font-bold text-white">
+              <div className="w-7 h-7 rounded-full bg-primary flex items-center justify-center text-xs font-bold text-white">
                 JC
               </div>
               <div>
@@ -156,7 +156,7 @@ const Login = () => {
         <div className="lg:col-span-5 bg-white text-slate-900 rounded-2xl p-8 lg:p-10 shadow-2xl flex flex-col justify-between border border-slate-100">
           <div>
             {/* Designated Gateway Header */}
-            <div className="bg-purple-50 text-primary border border-purple-200/60 rounded-lg px-3 py-2 text-xs font-medium flex items-center justify-between mb-6">
+            <div className="bg-teal-50 text-primary border border-teal-200/60 rounded-lg px-3 py-2 text-xs font-medium flex items-center justify-between mb-6">
               <span>DESIGNATED GATEWAY: EduManage Metropolitan University</span>
               <span className="text-[10px] bg-primary text-white px-1.5 py-0.5 rounded">KMU-7419</span>
             </div>
@@ -264,7 +264,7 @@ const Login = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full mt-2 py-3 px-4 bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-lg shadow-lg shadow-purple-600/30 transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+                className="w-full mt-2 py-3 px-4 bg-primary hover:bg-primary-hover text-white text-sm font-semibold rounded-lg shadow-lg shadow-teal-600/30 transition-all flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
               >
                 {loading ? 'Authenticating...' : 'Sign in to Academic Workspace →'}
               </button>
@@ -309,16 +309,16 @@ const Login = () => {
       </div>
 
       {/* Bottom Alert Banner */}
-      <div className="max-w-7xl w-full mx-auto bg-purple-900/40 border border-purple-500/30 rounded-xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-purple-200 shadow-lg mt-4">
+      <div className="max-w-7xl w-full mx-auto bg-slate-900/80 border border-teal-500/30 rounded-xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-teal-100 shadow-lg mt-4">
         <div className="flex items-center gap-2.5">
-          <Calendar className="w-4 h-4 text-purple-400 flex-shrink-0" />
+          <Calendar className="w-4 h-4 text-teal-400 flex-shrink-0" />
           <span>
             <strong>Fall Semester Grading Window Closes Oct 31, 23:59 EST.</strong> Deans and department heads are requested to complete grade rosters prior to the automated registrar freeze.
           </span>
         </div>
         <button
           onClick={() => toast('Academic Calendar is integrated in Dashboard & Help Center.', { icon: '📅' })}
-          className="whitespace-nowrap px-3 py-1 bg-purple-500/20 hover:bg-purple-500/30 text-purple-200 border border-purple-400/30 rounded-lg text-xs font-medium transition-colors"
+          className="whitespace-nowrap px-3 py-1 bg-teal-500/20 hover:bg-teal-500/30 text-teal-200 border border-teal-400/30 rounded-lg text-xs font-medium transition-colors"
         >
           Academic Calendar
         </button>

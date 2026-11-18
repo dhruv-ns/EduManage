@@ -150,7 +150,7 @@ const Settings = () => {
               <span>{tab.label}</span>
               {tab.badge && (
                 <span className={`text-[9px] px-1.5 py-0.2 rounded font-mono ${
-                  isActive ? 'bg-purple-800 text-white' : 'bg-slate-200 text-slate-700'
+                  isActive ? 'bg-teal-800 text-white' : 'bg-slate-200 text-slate-700'
                 }`}>
                   {tab.badge}
                 </span>
@@ -199,7 +199,7 @@ const Settings = () => {
                 <button
                   type="button"
                   onClick={() => toast('Seal replacement opened.', { icon: '🏛️' })}
-                  className="px-3 py-1.5 text-xs font-semibold text-primary bg-white border border-primary/20 rounded-lg hover:bg-purple-50"
+                  className="px-3 py-1.5 text-xs font-semibold text-primary bg-white border border-primary/20 rounded-lg hover:bg-teal-50"
                 >
                   Replace
                 </button>
@@ -276,7 +276,7 @@ const Settings = () => {
                     Configure grading metrics, attendance mandates, hall ticket lockouts, and instructor modification rules.
                   </p>
                 </div>
-                <span className="text-[10px] font-bold text-purple-700 bg-purple-50 px-2 py-0.5 rounded border border-purple-200">
+                <span className="text-[10px] font-bold text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
                   Curriculum Registered
                 </span>
               </div>
@@ -379,12 +379,12 @@ const Settings = () => {
             </div>
 
             {/* Sticky Floating Save Bar */}
-            <div className="bg-purple-900 text-white rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+            <div className="bg-[#1E3A5F] text-white rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
               <div className="flex items-center gap-3">
-                <RefreshCw className="w-5 h-5 text-purple-300 animate-spin" style={{ animationDuration: '6s' }} />
+                <RefreshCw className="w-5 h-5 text-teal-300 animate-spin" style={{ animationDuration: '6s' }} />
                 <div>
                   <p className="text-xs font-bold">Pending System Modifications</p>
-                  <p className="text-[11px] text-purple-200">
+                  <p className="text-[11px] text-slate-200">
                     Changes will propagate to active faculty and student sessions automatically.
                   </p>
                 </div>
@@ -393,7 +393,7 @@ const Settings = () => {
                 <button
                   type="button"
                   onClick={fetchSettings}
-                  className="px-3.5 py-1.5 text-xs font-semibold text-purple-200 hover:text-white"
+                  className="px-3.5 py-1.5 text-xs font-semibold text-slate-200 hover:text-white"
                 >
                   Discard changes
                 </button>
@@ -424,7 +424,7 @@ const Settings = () => {
               </p>
 
               <div className="space-y-3">
-                <div className="p-3 bg-purple-50/70 border border-purple-100 rounded-lg">
+                <div className="p-3 bg-teal-50/70 border border-teal-100 rounded-lg">
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-[10px] font-bold text-primary uppercase">Super Administrator</span>
                     <span className="text-[9px] font-mono bg-primary text-white px-1.5 py-0.2 rounded">Root Clearances</span>
@@ -483,7 +483,7 @@ const Settings = () => {
             <div className="bg-card-bg rounded-xl border border-border p-5 space-y-3">
               <h3 className="text-xs font-bold text-secondary uppercase">PHYSICAL INFRASTRUCTURE</h3>
               <div className="rounded-lg overflow-hidden border border-border bg-slate-900 text-white p-4 relative">
-                <Building className="w-8 h-8 text-purple-400 mb-2" />
+                <Building className="w-8 h-8 text-teal-400 mb-2" />
                 <h4 className="text-xs font-bold">North Campus Node</h4>
                 <p className="text-[10px] text-slate-300 mt-1">
                   Primary Enterprise Server Gateway • Active & synchronizing with 2,450 student accounts.

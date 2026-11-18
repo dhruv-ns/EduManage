@@ -18,7 +18,7 @@ import ErrorState from '../../components/common/ErrorState';
 import { exportToCsv } from '../../utils/exportCsv';
 import toast from 'react-hot-toast';
 
-const COLORS = ['#6C3FEE', '#3B82F6', '#10B981', '#F59E0B', '#EC4899', '#8B5CF6'];
+const COLORS = ['#0F766E', '#1E3A5F', '#B45309', '#0D9488', '#3B82F6', '#64748B'];
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -179,7 +179,7 @@ const Dashboard = () => {
                 2024 Cohort
               </span>
               <span className="flex items-center gap-1.5 text-secondary">
-                <span className="w-2.5 h-2.5 rounded-full bg-purple-200 inline-block"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-slate-300 inline-block"></span>
                 2023 Cohort
               </span>
             </div>
@@ -190,17 +190,17 @@ const Dashboard = () => {
               <AreaChart data={enrollmentData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                 <defs>
                   <linearGradient id="enrollmentGrad" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#6C3FEE" stopOpacity={0.3} />
-                    <stop offset="95%" stopColor="#6C3FEE" stopOpacity={0.0} />
+                    <stop offset="5%" stopColor="#0F766E" stopOpacity={0.3} />
+                    <stop offset="95%" stopColor="#0F766E" stopOpacity={0.0} />
                   </linearGradient>
                 </defs>
                 <XAxis dataKey="month" stroke="#8E8EA0" fontSize={11} tickLine={false} />
                 <YAxis stroke="#8E8EA0" fontSize={11} tickLine={false} axisLine={false} />
                 <Tooltip
-                  contentStyle={{ backgroundColor: '#1A1A2E', borderRadius: '8px', border: 'none', color: '#fff', fontSize: '12px' }}
+                  contentStyle={{ backgroundColor: '#0F172A', borderRadius: '8px', border: 'none', color: '#fff', fontSize: '12px' }}
                 />
-                <Area type="monotone" dataKey="cohort2024" stroke="#6C3FEE" strokeWidth={2.5} fillOpacity={1} fill="url(#enrollmentGrad)" />
-                <Area type="monotone" dataKey="cohort2023" stroke="#C4B5FD" strokeWidth={1.5} strokeDasharray="3 3" fill="none" />
+                <Area type="monotone" dataKey="cohort2024" stroke="#0F766E" strokeWidth={2.5} fillOpacity={1} fill="url(#enrollmentGrad)" />
+                <Area type="monotone" dataKey="cohort2023" stroke="#94A3B8" strokeWidth={1.5} strokeDasharray="3 3" fill="none" />
               </AreaChart>
             </ResponsiveContainer>
           </div>
@@ -367,7 +367,7 @@ const Dashboard = () => {
 
             <div className="space-y-3">
               <div className="flex items-start gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100">
-                <div className="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 font-bold flex flex-col items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-teal-100 text-teal-800 font-bold flex flex-col items-center justify-center flex-shrink-0">
                   <span className="text-[9px] uppercase">OCT</span>
                   <span className="text-sm leading-none">28</span>
                 </div>
@@ -403,7 +403,7 @@ const Dashboard = () => {
 
           <button
             onClick={() => toast('Full Academic Calendar is available in System Settings.', { icon: '📅' })}
-            className="w-full mt-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-purple-100 rounded-lg transition-colors"
+            className="w-full mt-4 py-2 text-xs font-semibold text-primary bg-primary-light hover:bg-teal-100 rounded-lg transition-colors"
           >
             Full Academic Calendar
           </button>
@@ -468,7 +468,7 @@ const Dashboard = () => {
             <div className="grid grid-cols-2 gap-3">
               <button
                 onClick={() => navigate('/add-student')}
-                className="p-3 bg-purple-50 hover:bg-purple-100/80 rounded-xl border border-purple-100 text-left transition-all cursor-pointer group"
+                className="p-3 bg-teal-50 hover:bg-teal-100/80 rounded-xl border border-teal-100 text-left transition-all cursor-pointer group"
               >
                 <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center mb-2 group-hover:scale-105 transition-transform">
                   <UserPlus className="w-4 h-4" />

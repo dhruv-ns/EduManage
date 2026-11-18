@@ -254,7 +254,7 @@ const Departments = () => {
 
               {/* Department Head */}
               <div className="flex items-center gap-3 p-2.5 rounded-lg bg-slate-50 border border-slate-100 mb-4">
-                <div className="w-10 h-10 rounded-full bg-purple-100 text-purple-700 font-bold flex items-center justify-center flex-shrink-0 text-xs">
+                <div className="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center flex-shrink-0 text-xs">
                   {dept.departmentHead.split(' ').map((n) => n[0]).join('').slice(0, 2)}
                 </div>
                 <div>
@@ -304,7 +304,7 @@ const Departments = () => {
             <div className="flex items-center gap-2 pt-3 border-t border-border">
               <button
                 onClick={() => toast(`Viewing detailed prospectus for ${dept.name}`, { icon: '🏛️' })}
-                className="flex-1 py-1.5 text-xs font-semibold text-primary bg-primary-light hover:bg-purple-100 rounded-lg transition-colors cursor-pointer"
+                className="flex-1 py-1.5 text-xs font-semibold text-primary bg-primary-light hover:bg-teal-100 rounded-lg transition-colors cursor-pointer"
               >
                 View Department
               </button>
@@ -328,9 +328,9 @@ const Departments = () => {
         {/* 6th Card: Charter New Division Card */}
         <div
           onClick={() => setIsAddModalOpen(true)}
-          className="bg-card-bg rounded-xl border-2 border-dashed border-purple-200 p-6 flex flex-col items-center justify-center text-center hover:border-primary hover:bg-purple-50/20 transition-all cursor-pointer group"
+          className="bg-card-bg rounded-xl border-2 border-dashed border-teal-200 p-6 flex flex-col items-center justify-center text-center hover:border-primary hover:bg-teal-50/20 transition-all cursor-pointer group"
         >
-          <div className="w-12 h-12 rounded-xl bg-purple-100 text-primary flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+          <div className="w-12 h-12 rounded-xl bg-teal-100 text-primary flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
             <Building2 className="w-6 h-6" />
           </div>
           <h3 className="text-sm font-bold text-heading mb-1">Charter New Division</h3>

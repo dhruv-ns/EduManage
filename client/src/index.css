@@ -1,34 +1,60 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #6C3FEE;
-  --color-primary-hover: #5A2FD6;
-  --color-primary-light: #EDE8FD;
-  --color-primary-50: #F5F0FF;
-  --color-app-bg: #F8F7FC;
+  --font-sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'IBM Plex Serif', Georgia, Cambria, 'Times New Roman', Times, serif;
+
+  /* Primary: Deep Teal */
+  --color-primary: #0F766E;
+  --color-primary-hover: #115E59;
+  --color-primary-light: #CCFBF1;
+  --color-primary-50: #F0FDFA;
+  --color-primary-900: #134E4A;
+
+  /* Secondary: Deep Slate Navy */
+  --color-secondary-brand: #1E3A5F;
+  --color-secondary-hover: #162C48;
+  --color-secondary-light: #E0E8F2;
+  --color-secondary-50: #F0F4F8;
+
+  /* Tertiary: Warm Amber / Rust Ochre */
+  --color-tertiary: #B45309;
+  --color-tertiary-hover: #92400E;
+  --color-tertiary-light: #FEF3C7;
+  --color-tertiary-50: #FFFBEB;
+
+  /* Neutrals & Surfaces */
+  --color-neutral-dark: #0F172A;
+  --color-app-bg: #EAEFF8;
   --color-card-bg: #FFFFFF;
-  --color-heading: #1A1A2E;
-  --color-body: #4A4A68;
-  --color-secondary: #8E8EA0;
-  --color-border: #E8E8EF;
-  --color-success: #22C55E;
-  --color-success-light: #DCFCE7;
-  --color-success-dark: #166534;
-  --color-warning: #F59E0B;
+  --color-heading: #0F172A;
+  --color-body: #334155;
+  --color-secondary: #64748B;
+  --color-border: #E2E8F0;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-success-light: #D1FAE5;
+  --color-success-dark: #065F46;
+  --color-warning: #B45309;
   --color-warning-light: #FEF3C7;
-  --color-warning-dark: #92400E;
-  --color-danger: #EF4444;
+  --color-warning-dark: #78350F;
+  --color-danger: #DC2626;
   --color-danger-light: #FEE2E2;
   --color-danger-dark: #991B1B;
-  --color-info: #3B82F6;
-  --color-info-light: #DBEAFE;
-  --color-info-dark: #1E40AF;
+  --color-info: #1E3A5F;
+  --color-info-light: #E0E8F2;
+  --color-info-dark: #0F1D30;
   --color-sidebar-bg: #FFFFFF;
 }
 
 body {
   @apply bg-app-bg text-body antialiased;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1, h2, .font-headline {
+  font-family: var(--font-serif);
 }
 
 /* Scrollbar styles */
@@ -40,9 +66,9 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #d1d5db;
+  background: #cbd5e1;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: #94a3b8;
 }

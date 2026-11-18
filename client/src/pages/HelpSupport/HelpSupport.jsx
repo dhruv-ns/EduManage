@@ -127,7 +127,7 @@ const HelpSupport = () => {
             <button
               key={tag}
               onClick={() => setSearch(tag)}
-              className="px-2.5 py-1 bg-slate-100 hover:bg-purple-50 hover:text-primary rounded-lg text-secondary text-[11px] font-medium transition-colors cursor-pointer"
+              className="px-2.5 py-1 bg-slate-100 hover:bg-teal-50 hover:text-primary rounded-lg text-secondary text-[11px] font-medium transition-colors cursor-pointer"
             >
               {tag}
             </button>
@@ -139,7 +139,7 @@ const HelpSupport = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="bg-card-bg rounded-xl border border-border p-5 flex flex-col justify-between hover:shadow-md transition-shadow">
           <div>
-            <div className="w-10 h-10 rounded-xl bg-purple-100 text-primary flex items-center justify-center mb-3">
+            <div className="w-10 h-10 rounded-xl bg-teal-100 text-primary flex items-center justify-center mb-3">
               <BookOpen className="w-5 h-5" />
             </div>
             <span className="text-[10px] font-bold text-secondary uppercase">150+ ARTICLES</span>
@@ -308,7 +308,7 @@ const HelpSupport = () => {
             <div className="space-y-2.5">
               <button
                 onClick={() => toast('Academic Chat session connected to Staff Support.', { icon: '💬' })}
-                className="w-full flex items-center justify-between p-3 rounded-xl bg-purple-50/70 border border-purple-100 hover:bg-purple-100/70 transition-colors text-left"
+                className="w-full flex items-center justify-between p-3 rounded-xl bg-teal-50/70 border border-teal-100 hover:bg-teal-100/70 transition-colors text-left"
               >
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-lg bg-primary text-white flex items-center justify-center">

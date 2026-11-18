@@ -35,7 +35,14 @@ const Login = () => {
       toast.success('Successfully authenticated. Welcome back!');
       navigate('/');
     } catch (err) {
-      const msg = err.response?.data?.message || 'Authentication failed. Please verify credentials.';
+      let msg = err.response?.data?.message;
+      if (!msg) {
+        if (!err.response) {
+          msg = 'Unable to reach backend server. Please verify your backend server is running and reachable.';
+        } else {
+          msg = 'Authentication failed. Please verify credentials.';
+        }
+      }
       setError(msg);
       toast.error(msg);
     } finally {
